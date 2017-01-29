@@ -3,28 +3,28 @@
         "translation": {
             "SKILL_NAME": "Live departure monitor of ASEAG Aachen",
             "HELP_MESSAGE": "You can say tell me departures from XYZ, or you can say exit.",
-            "HELP_REPROMPT" : "What can I help you with?",
-            "STOP_MESSAGE" : "Goodbye!",
-            "STAGE_NOT_FOUND_MESSAGE" : "I'm sorry, I do not know ",
+            "HELP_REPROMPT": "What can I help you with?",
+            "STOP_MESSAGE": "Goodbye!",
+            "STAGE_NOT_FOUND_MESSAGE": "I'm sorry, I do not know ",
             "STAGE_NOT_FOUND_WITH_STAGE_NAME": "the bus stop %s. ",
             "STAGE_NOT_FOUND_WITHOUT_STAGE_NAME": "that bus stop. ",
             "STAGE_NOT_FOUND_REPROMPT": "What else can I help with?",
-            "STAGE_DEPARTURES_START" : "Next departures for %s: ",
-            "STAGE_DEPARTURE": "Line %s towards %s. Departure %s."
+            "STAGE_DEPARTURES_START": "Next departures for %s: ",
+            "STAGE_DEPARTURE": "Line %s towards %s. Departure %s. "
         }
     },
     "de-DE": {
         "translation": {
             "SKILL_NAME": "Live Abfahrtsmonitor der ASEAG Aachen",
             "HELP_MESSAGE": "Du kannst sagen, „Abfahrten ab XYZ“, oder du kannst „“Beenden sagen.",
-            "HELP_REPROMPT" : "Wie kann ich dir helfen?",
-            "STOP_MESSAGE" : "Auf Wiedersehen!",
-            "STAGE_NOT_FOUND_MESSAGE" : "Tut mir leid, ich kenne ",
+            "HELP_REPROMPT": "Wie kann ich dir helfen?",
+            "STOP_MESSAGE": "Auf Wiedersehen!",
+            "STAGE_NOT_FOUND_MESSAGE": "Tut mir leid, ich kenne ",
             "STAGE_NOT_FOUND_WITH_STAGE_NAME": "die Bushaltestelle %s nicht. ",
             "STAGE_NOT_FOUND_WITHOUT_STAGE_NAME": "diese Bushaltestelle nicht. ",
             "STAGE_NOT_FOUND_REPROMPT": "Womit kann ich dir sonst helfen?",
-            "STAGE_DEPARTURES_START" : "Nächste Abfahrten für %s: ",
-            "STAGE_DEPARTURE": "Linie %s in Richtung %s. Abfahrt %s."
+            "STAGE_DEPARTURES_START": "Nächste Abfahrten für %s: ",
+            "STAGE_DEPARTURE": "Linie %s in Richtung %s. Abfahrt %s. "
         }
     }
 }

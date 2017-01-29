@@ -5,7 +5,9 @@ fs.open('../speechAssets/customSlotTypes/LIST_OF_STAGES', 'w', function(err, fd)
       throw 'error opening file: ' + err;
     }
 
-    require('../src/resources/stages.json').map(function(stage) {
+    require('../src/resources/stages.json').filter(function(stage) {
+      return stage.town && stage.town.name === "Aachen";
+    }).map(function(stage) {
         return stage.name;
     }).forEach(function(stageName) {
         fs.write(fd, stageName + '\n', function(err) {

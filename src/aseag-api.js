@@ -16,12 +16,12 @@ exports.getTimetableForStage = function(stageId, limit, locale, callback) {
             var limited = departures.slice(0, limit)
 
             var sanitized = limited.map(function(departure) {
-              return {
-                'route': departure.route.name,
-                'destination': departure.departureStage.name,
-                'toNow': moment.parseZone(departure.expectedTime).locale(locale).fromNow(),
-                'realtime': !!departure.realtime
-              };
+                return {
+                    'route': departure.route.name,
+                    'destination': departure.destinationStage.name,
+                    'toNow': moment.parseZone(departure.expectedTime).locale(locale).fromNow(),
+                    'realtime': !!departure.realtime
+                };
             });
             callback(null, sanitized);
         }
