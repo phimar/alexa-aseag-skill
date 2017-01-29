@@ -4,7 +4,7 @@
   "description": "An Alexa Skill to retrieve live information about the bus traffic in Aachen.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,10 @@
     "lodash.find": "^4.6.0",
     "moment": "^2.17.1",
     "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-string": "^1.3.0",
+    "mocha": "^3.2.0"
   }
 }
