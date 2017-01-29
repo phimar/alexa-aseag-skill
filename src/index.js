@@ -8,7 +8,7 @@ var handlers = require('./handlers');
 
 exports.handler = function(event, context, callback) {
   var alexa = Alexa.handler(event, context);
-  alexa.APP_ID = process.env['APP_ID'];
+  alexa.appId = process.env['APP_ID'];
 
   alexa.resources = languageStrings;
   alexa.registerHandlers(handlers);
