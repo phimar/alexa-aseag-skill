@@ -1,0 +1,3 @@
+TimetableIntent departures {Stage}
+TimetableIntent departures ab {Stage}
+TimetableIntent departures an {Stage}
