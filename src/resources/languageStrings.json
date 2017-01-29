@@ -8,7 +8,9 @@
             "STAGE_NOT_FOUND_MESSAGE" : "I'm sorry, I do not know ",
             "STAGE_NOT_FOUND_WITH_STAGE_NAME": "the bus stop %s. ",
             "STAGE_NOT_FOUND_WITHOUT_STAGE_NAME": "that bus stop. ",
-            "STAGE_NOT_FOUND_REPROMPT": "What else can I help with?"
+            "STAGE_NOT_FOUND_REPROMPT": "What else can I help with?",
+            "STAGE_DEPARTURES_START" : "Next departures for %s: ",
+            "STAGE_DEPARTURE": "Line %s towards %s. Departure %s."
         }
     },
     "de-DE": {
@@ -20,7 +22,9 @@
             "STAGE_NOT_FOUND_MESSAGE" : "Tut mir leid, ich kenne ",
             "STAGE_NOT_FOUND_WITH_STAGE_NAME": "die Bushaltestelle %s nicht. ",
             "STAGE_NOT_FOUND_WITHOUT_STAGE_NAME": "diese Bushaltestelle nicht. ",
-            "STAGE_NOT_FOUND_REPROMPT": "Womit kann ich dir sonst helfen?"
+            "STAGE_NOT_FOUND_REPROMPT": "Womit kann ich dir sonst helfen?",
+            "STAGE_DEPARTURES_START" : "Nächste Abfahrten für %s: ",
+            "STAGE_DEPARTURE": "Linie %s in Richtung %s. Abfahrt %s."
         }
     }
 }

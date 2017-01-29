@@ -17,7 +17,6 @@ describe('aseag-api', function() {
         if(err) {
           done(err);
         } else {
-          console.log(departures);
           expect(departures).to.be.instanceof(Array);
           expect(departures).to.have.length.within(0,LIMIT);
           departures.forEach(function(departure) {
