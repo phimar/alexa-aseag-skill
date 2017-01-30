@@ -13,9 +13,18 @@ exports.getTimetableForStage = function(stageId, limit, locale, callback) {
                 departures = JSON.parse(body);
             } catch (ignored) {}
 
-            var limited = departures.slice(0, limit)
+            // Filter Departures less than a minute in the future
+            var nowInOneMinute = moment().add(1, 'minute');
 
-            var sanitized = limited.map(function(departure) {
+            var filtered = departures.filter(function(departure) {
+                return moment.parseZone(departure.expectedTime).isAfter(nowInOneMinute);
+            });
+
+            // Limit the response accodring to the limit parameter
+            var limited = filtered.slice(0, limit)
+
+            // Format the response to required values and a readable toNow value
+            var formatted = limited.map(function(departure) {
                 return {
                     'route': departure.route.name,
                     'destination': departure.destinationStage.name,
@@ -23,7 +32,7 @@ exports.getTimetableForStage = function(stageId, limit, locale, callback) {
                     'realtime': !!departure.realtime
                 };
             });
-            callback(null, sanitized);
+            callback(null, formatted);
         }
     });
 }

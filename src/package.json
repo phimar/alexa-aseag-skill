@@ -1,6 +1,6 @@
 {
   "name": "alexa-aseag-skill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Alexa Skill to retrieve live information about the bus traffic in Aachen.",
   "main": "index.js",
   "scripts": {
