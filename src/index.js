@@ -10,4 +10,6 @@ exports.handler = function(event, context, callback) {
   alexa.resources = languageStrings;
   alexa.registerHandlers(handlers);
   alexa.execute();
+
+  return alexa;
 };
