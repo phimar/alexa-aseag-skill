@@ -1,3 +1,2 @@
 TimetableIntent Abfahrten {Stage}
 TimetableIntent Abfahrten ab {Stage}
-TimetableIntent Abfahrten an {Stage}

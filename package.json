@@ -1,0 +1,43 @@
+{
+  "name": "alexa-aseag-skill",
+  "version": "0.0.3",
+  "description": "An Alexa Skill to retrieve live information about the bus traffic in Aachen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/test/ --compilers js:babel-register",
+    "gen-stages": "babel-node helper/generate-stage-lists.js",
+    "clean": "rm -rf dist",
+    "compile": "babel src -d dist --copy-files --ignore test",
+    "installdeps": "cp package.json dist/ && cd dist && npm install --production",
+    "zip": "cd dist && zip -r -q ../alexa-aseag-skill-$(node -p -e \"require('./package.json').version\").zip *",
+    "dist": "npm run clean && npm run compile && npm run installdeps && npm run zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phimar/alexa-aseag-skill.git"
+  },
+  "author": "phimar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phimar/alexa-aseag-skill/issues"
+  },
+  "homepage": "https://github.com/phimar/alexa-aseag-skill#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "lodash.find": "^4.6.0",
+    "moment": "^2.17.1",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.22.0",
+    "chai": "^3.5.0",
+    "chai-string": "^1.3.0",
+    "eslint": "^3.14.1",
+    "lodash.sortby": "^4.7.0",
+    "lodash.uniq": "^4.5.0",
+    "lodash.uniqby": "^4.7.0",
+    "mocha": "^3.2.0"
+  }
+}

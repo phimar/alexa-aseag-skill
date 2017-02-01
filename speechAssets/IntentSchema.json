@@ -1,21 +1,19 @@
 {
-    "intents": [{
+  "intents": [{
       "intent": "TimetableIntent",
-      "slots": [
-        {
-          "name": "Stage",
-          "type": "LIST_OF_STAGES"
-        }
-      ]
+      "slots": [{
+        "name": "Stage",
+        "type": "LIST_OF_STAGES"
+      }]
     },
-        {
-            "intent": "AMAZON.HelpIntent"
-        },
-        {
-            "intent": "AMAZON.StopIntent"
-        },
-        {
-            "intent": "AMAZON.CancelIntent"
-        }
-    ]
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
 }

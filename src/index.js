@@ -1,10 +1,8 @@
-'use strict';
+const Alexa = require('alexa-sdk');
 
-var Alexa = require('alexa-sdk');
+const languageStrings = require('./resources/languageStrings.json');
 
-var languageStrings = require('./resources/languageStrings.json');
-
-var handlers = require('./handlers');
+const handlers = require('./handlers');
 exports.handler = function(event, context, callback) {
   var alexa = Alexa.handler(event, context);
   alexa.appId = process.env['APP_ID'];
@@ -12,4 +10,4 @@ exports.handler = function(event, context, callback) {
   alexa.resources = languageStrings;
   alexa.registerHandlers(handlers);
   alexa.execute();
-}
+};
