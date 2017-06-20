@@ -1,14 +1,11 @@
 const Alexa = require('alexa-sdk');
 
-const languageStrings = require('./resources/languageStrings.json');
-
-const handlers = require('./handlers');
 exports.handler = function(event, context, callback) {
-  var alexa = Alexa.handler(event, context);
+  var alexa = Alexa.handler(event, context, callback);
   alexa.appId = process.env['APP_ID'];
 
-  alexa.resources = languageStrings;
-  alexa.registerHandlers(handlers);
+  alexa.resources = require('./resources/languageStrings.json');
+  alexa.registerHandlers(require('./handlers'));
   alexa.execute();
 
   return alexa;
